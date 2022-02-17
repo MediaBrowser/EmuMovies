@@ -14,7 +14,7 @@ using MediaBrowser.Model.Configuration;
 
 namespace EmuMovies
 {
-    public class EmuMoviesImageProvider : IRemoteImageProvider, IHasOrder
+    public class EmuMoviesImageProvider : IRemoteImageProvider, IHasOrder, IHasMetadataFeatures
     {
         private readonly IHttpClient _httpClient;
         private readonly IFileSystem _fileSystem;
@@ -384,5 +384,7 @@ namespace EmuMovies
                 return 1;
             }
         }
+
+        public MetadataFeatures[] Features => new[] { MetadataFeatures.RequiredSetup };
     }
 }
