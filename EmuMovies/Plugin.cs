@@ -44,8 +44,7 @@ namespace EmuMovies
                     Name = "emumovies",
                     EmbeddedResourcePath = GetType().Namespace + ".Configuration.emumovies.html",
                     EnableInMainMenu = true,
-                    MenuSection = "server",
-                    MenuIcon = "closed_caption"
+                    MenuIcon = "sports_esports"
                 },
                 new PluginPageInfo
                 {
